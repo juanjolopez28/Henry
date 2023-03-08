@@ -12,10 +12,12 @@ if(len(sys.argv)>3):
     llovio=bool(sys.argv[3])
 
 x = datetime.datetime.now()
+marca_de_tiempo = datetime.datetime.now()
+marca_de_tiempo = int(datetime.datetime.timestamp(marca_de_tiempo))
 print("Ahora =",x)
 
 archivo=open('tarea09.csv','a')
-archivo.write(str(x)+'\n')
+archivo.write(str(marca_de_tiempo)+'\n')
 archivo.close()
 '''
 #2.-Crear un archivo a partir de los datos presentes en el diccionario provisto. El cual debe contener 
