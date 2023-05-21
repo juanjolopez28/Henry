@@ -31,9 +31,9 @@ group by s.Sucursal
 order by max(v.Cantidad*v.Precio) desc;
 
 
-select sum(Porcentanje) as porcentaje from quiroz where anio=2020
-
-, rosas, centro
+#select sum(Porcentanje) as porcentaje from quiroz where anio=2020
+use henry_checkpoint_m3;
+select count(IdSucursal) from `Comisiones-Cordoba-Centro`
 
 
 
