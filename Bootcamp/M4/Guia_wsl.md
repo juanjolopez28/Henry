@@ -8,9 +8,11 @@ url: https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04
 6-sudo apt install docker-ce -y
 7-sudo systemctl status docker ->aqui sale error los corregimos con:
 sudo /etc/init.d/docker start
+--- sudo systemctl start docker --> debemos verificar que docker este corriendo
+
 # Crear red hadoop
 8-sudo docker network create --driver=bridge hadoop
-9- chmod +x ./start-container.sh
+9- chmod +x ./start-container.sh -> lo hacemos ejecutable
 10- sudo ./start-container.sh
 11-
 
